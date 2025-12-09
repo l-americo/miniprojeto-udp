@@ -5,7 +5,7 @@ import time
 import uuid
 
 class CurrencyClientUDP:
-    def __init__(self, host="localhost", port=5000, timeout=2.0, retries=3):
+    def __init__(self, host="localhost", port=15000, timeout=2.0, retries=3):
         self.host = host
         self.port = port
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -99,7 +99,8 @@ class CurrencyClientUDP:
 
 if __name__ == "__main__":
     host = sys.argv[1] if len(sys.argv) > 1 else "localhost"
-    port = int(sys.argv[2]) if len(sys.argv) > 2 else 5000
+    port = int(sys.argv[2]) if len(sys.argv) > 2 else 15000
 
     client = CurrencyClientUDP(host, port)
     client.run()
+
