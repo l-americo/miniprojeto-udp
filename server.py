@@ -6,7 +6,7 @@ import random
 from datetime import datetime
 
 class CurrencyServerUDP:
-    def __init__(self, host="localhost", port=5000):
+    def __init__(self, host="localhost", port=15000):
         self.host = host
         self.port = port
         self.socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -196,3 +196,4 @@ class CurrencyServerUDP:
 if __name__ == "__main__":
     server = CurrencyServerUDP()
     server.start()
+
