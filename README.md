@@ -21,12 +21,12 @@ Abra um terminal e execute:
 python server.py
 ```
 
-O servidor será iniciado na porta **5000** por padrão.
+O servidor será iniciado na porta **15000** por padrão.
 
 **Saída esperada:**
 
 ```
-[SERVIDOR] Iniciado em localhost:5000 (UDP)
+[SERVIDOR] Iniciado em localhost:15000 (UDP)
 [SERVIDOR] Aguardando requisições...
 ```
 
@@ -43,7 +43,7 @@ python client.py
 **Opcional:** especificar host e porta
 
 ```bash
-python client.py localhost 5000
+python client.py localhost 15000
 ```
 
 ---
@@ -164,7 +164,7 @@ Cada requisição será respondida de forma independente.
 
 ```
 $ python client.py
-Conectado ao servidor UDP localhost:5000
+Conectado ao servidor UDP localhost:15000
 
 ==================================================
 SISTEMA DE COTAÇÕES DE MOEDAS
